@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class StaticPagesController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,32 +16,9 @@ class StaticPagesController extends Controller
      */
     public function index()
     {
-        return view('home.index');
+        //
     }
 
-    public function home()
-    {
-        return view('home.test');
-    }
-     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function help()
-    {
-         return view('home.help');
-    }
-
-     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function about()
-    {
-         return view('home.about');
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -49,7 +26,7 @@ class StaticPagesController extends Controller
      */
     public function create()
     {
-        //
+        return view('home.users.create');
     }
 
     /**

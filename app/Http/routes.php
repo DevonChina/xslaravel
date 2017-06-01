@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', 'home\StaticPagesController@index');
-Route::get('/help', 'home\StaticPagesController@help');
-Route::get('/about', 'home\StaticPagesController@about');
+Route::get('/', 'home\StaticPagesController@index')->name('index');
+Route::get('/help', 'home\StaticPagesController@help')->name('help');
+Route::get('/about', 'home\StaticPagesController@about')->name('about');
+Route::get('/signup', 'home\UsersController@create')->name('signup');
 
-// Route::get('/about', function(){
-//      return view('home.about');
+// Route::get('/home', function(){
+//      return view('home.home');
 // });
