@@ -12,6 +12,7 @@
 
     <div class="container">
       <div class="col-md-offset-1 col-md-10">
+        @include('home.users.messages')
         @yield('content')
         @include('layouts.footer')
       </div>

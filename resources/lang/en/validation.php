@@ -89,9 +89,18 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        // 'attribute-name' => [
+        //     'rule-name' => 'custom-message',
+        // ],
+        'name' => [
+            'required' => '用户名不填你咋登录...'
         ],
+        'email' => [
+            'required' => '你是准备不要邮箱么？',
+        ],
+        'password' => [
+            'required' => '骚年密码貌似不能为空...'
+         ]
     ],
 
     /*
